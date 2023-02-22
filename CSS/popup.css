@@ -1,0 +1,17 @@
+.mainboard {
+    padding: 20px;
+    width: 300px;
+    
+}
+
+.btnfont {
+    font-size: 30px;
+}
+
+.labelsetting {
+    display: flex;
+    font-size: 20px;
+}
+.buttongroup {
+    margin-top: 10px;
+}

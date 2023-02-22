@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Answer and Qusetiion",
+  "description": "Respond to user's question using chatgpt",
+  "version": "1.1.1",
+  "author": "Predrag Tomic",
+  "icons": {
+    "48": "icons/48.png"
+  },
+  "action":{
+    "default_popup":"HTML/popup.html"
+  },
+  "permissions":[
+    "experimental", "tabs", "experimental", "storage"
+  ],
+  "omnibox":{"keyword":"nt"}, 
+  "devtools_page": "devtools.html", 
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": [
+        "scripts/popup.js",
+        "scripts/mainwindow.js"        
+      ]
+    }
+  ]
+}
+

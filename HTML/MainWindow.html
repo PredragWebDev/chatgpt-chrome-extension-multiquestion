@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Answer and Question</title>
+    <link href="../CSS/mainwindow.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="mainboard Boarder-black-100 board-style-round">
+      <h1 class="header margin-top-10">ChatGPT Automation</h1>
+
+      <div class="contentboard">
+
+        <div class="display-flex">
+            <h2 class="text-align-left">Bunch of questions delimited by empty lines</h2>
+            <p id = "numofquestion" class="margin-left-auto font2"></p>
+        </div>
+        
+        <textarea id="question" class="textarea-width font2">
+        </textarea>
+        
+        <button class="margin-top-10 font2" id="updatebtn">Update Questions</button>
+
+        <p class="font2"><strong>Answer</strong> from ChatGPT</p>
+
+        <textarea id="answer" class="textarea-width font2">
+        </textarea>
+
+      </div>
+    </div>
+    
+    <script src="../scripts/mainwindow.js"></script>
+    <script src="../scripts/popup.js"></script>
+  </body>
+</html>
