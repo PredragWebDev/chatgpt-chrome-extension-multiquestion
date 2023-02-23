@@ -102,7 +102,6 @@ function sendQuestion_func() {
     localStorageModify_func(n_count);
     document.getElementById("runORstop").innerText = "  End";
 
-    location.href = "../HTML/MainWindow.html";
     
 }
 
