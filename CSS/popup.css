@@ -5,7 +5,7 @@
 }
 
 .btnfont {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .labelsetting {
@@ -13,5 +13,7 @@
     font-size: 20px;
 }
 .buttongroup {
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
 }
