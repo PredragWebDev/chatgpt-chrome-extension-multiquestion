@@ -11,13 +11,16 @@
     "default_popup":"HTML/popup.html"
   },
   "permissions":[
-    "experimental", "tabs", "experimental", "storage"
+    "experimental", "tabs", "storage"
+  ],
+  "host_permissions": [
+    "https://*/"
   ],
   "omnibox":{"keyword":"nt"}, 
   "devtools_page": "devtools.html", 
   "content_scripts": [
     {
-      "matches": ["https://chat.openai.com/*"],
+      "matches": ["<all_urls>"],
       "js": [
         "scripts/popup.js",
         "scripts/mainwindow.js"        
